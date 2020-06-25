@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ArteEmiretta</title>
+</head>
+<body>
+
+
+  <header>
+    <nav>
+    <span style="color:white;font-size:1.1em;position:absolute;top:calc(50% - 20px);left:30px;">
+        <h1 style="border-radius: 50%;">ARTE EMIRETTA</h1>
+    </span>
+    
+    <span style="position: relative;left:calc(50% - 250px);">
+        <a href="index.html">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Delivery</a>
+    <a href="#">Acerca de</a>
+    </span>
+    
+</nav>
+
+</header><br><br>
+
+    <!-- <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div> -->
+
+
+
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-instagram"></i></a>
+      </div>
+      
+    <div class="body">
+
+
+<div class="start">
+  <div class="blogo">
+    <img src="src/images/arteemiretta.png" class="logoimg">
+  </div>
+<div class="name">
+  <h1>Arte Emiretta</h1>
+  <h3>Ahora delivery en la Isla de Margarita, Estado Nueva Esparta.</h3>
+</div>
+
+</div>
+<div class="container" style="position:absolute;top:-20px;z-index: -12;">
+  <img src="src/images/madera.jpg" alt="Nature" style="width:100%;">
+  <div class="text-block">
+    <h4>🧂Salados🧂</h4>
+    <p>Brioche de queso parmesano.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+    </div>
+
+<br>
+<br><br>
+<footer>
+
+  <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 5, 2020 13:08:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Porfavor para ir a la página deseada porfavor acceda a este enlace <a href='arteemiretta.github.io/inicio'>Arte Emiretta</a> Gracias por su espera.";
+  }
+}, 1000);
+</script>
+
+</footer>
+
+
+</body>
+</html>
