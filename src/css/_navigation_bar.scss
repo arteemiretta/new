@@ -52,7 +52,7 @@ height:25px;
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: rgb(255, 255, 255);
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -109,22 +109,55 @@ height:25px;
       }
   }
   
+  .mobile, .contein {
+    display:none;
+  }
   
-  
-  // @media only screen and (max-width: 780px){
-  //     header {
-  //         position:fixed;
-  //         width:100%;
-  //         nav {
-  //             $pad: 1rem;
-  //             background: $colorPrincipal;
-  //             padding: $pad;
-  //             a {
-  //                 color:white;
-  //                 text-decoration: none;
-  //                 letter-spacing: 2px;
-  //                 font-size:1.4em;
-  //             }
-  //         }
-  //     }
-  // }
+  @media only screen and (max-width: 930px){
+    
+    .mobile, .contein {
+      display:block;
+    }
+    .wik {
+      display:none;
+    }
+    .mobile {
+      display:block;
+      position: fixed;
+      color:white;
+      height:100%;
+      width:50%;
+      text-align: left;
+      z-index: 3;
+      margin-left:-1000px;
+      transition: all ease .6s;
+      background: black;
+    }
+    .akctive {
+      margin-left:0px;
+    }
+    .wikiliki {
+      position: absolute;
+      z-index:4;
+      left:10px;
+      transition: all ease .3s;
+      transition-delay: .6s;
+    }
+    .akkstive {
+      margin-top:50px;
+    }
+  }
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:rgb(211, 178, 118);
+  font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+  right:20px;
+  width:10px;
+  height:10px;
+}
